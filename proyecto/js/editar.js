@@ -10,7 +10,7 @@ nombre:"",
 imagen:"",
 stock:0,
 precio:0,
-url:'https://mauroac26.pythonanywhere.com/productos/'+id,
+url:'https://mauroac26.pythonanywhere.com/peliculas/'+id,
 
 }
 
@@ -47,7 +47,7 @@ this.fetchData(this.url)
 
 function modi(){
     id = document.getElementById("id1").value;
-    const url = 'https://mauroac26.pythonanywhere.com/productos/' + id;
+    const url = 'https://mauroac26.pythonanywhere.com/peliculas/' + id;
 
     let producto = {
     nombre:document.getElementById("nombre1").value,
