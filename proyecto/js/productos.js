@@ -12,8 +12,8 @@ cargando:true,
 id:0,
 nombre:"",
 imagen:"",
-stock:0,
-precio:0,
+fecha:"",
+genero:"",
 }
 },
 
@@ -49,8 +49,8 @@ location.reload();
 grabar(){
 let producto = {
 nombre:this.nombre,
-precio: this.precio,
-stock: this.stock,
+genero: this.genero,
+fecha: this.fecha,
 imagen:this.imagen
 }
 var options = {

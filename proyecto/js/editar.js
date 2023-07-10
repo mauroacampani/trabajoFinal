@@ -26,8 +26,8 @@ fetch(url)
 document.getElementById("id1").value=data.id
 document.getElementById("nombre1").value = data.nombre
 document.getElementById("imagen1").value =data.imagen
-document.getElementById("stock1").value =data.stock
-document.getElementById("precio1").value =data.precio
+document.getElementById("fecha1").value =data.fecha
+document.getElementById("genero1").value =data.genero
 })
 .catch(err => {
 console.error(err);
@@ -51,8 +51,8 @@ function modi(){
 
     let producto = {
     nombre:document.getElementById("nombre1").value,
-    precio: document.getElementById("precio1").value,
-    stock: document.getElementById("stock1").value,
+    genero: document.getElementById("genero1").value,
+    fecha: document.getElementById("fecha1").value,
     imagen:document.getElementById("imagen1").value
     }
     

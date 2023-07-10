@@ -42,7 +42,8 @@ crossorigin="anonymous">
           <img :src="producto.imagen" :alt="producto.nombre">
         <div class="card-body">
             
-          <p class="card-text">{{producto.precio}}</p>
+          <p class="card-text">{{producto.fecha}}</p>
+          <p class="card-text">{{producto.genero}}</p>
           <!-- <a class="btn btn-primary" :href="'./producto_update.html?id='+ producto.id"  >Editar</a> -->
           <!-- Button trigger modal -->
 <button type="button" class="btn btn-sm btn-primary"  :onclick="`mod('${producto.id}')`"  data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -85,12 +86,12 @@ crossorigin="anonymous">
             
                         </div>
                         <div class="form-group">
-                        <label for="precio">Precio</label>
-                        <input type="number" name="precio1" id="precio1" class="form-control" v-model="precio1">
+                        <label for="precio">Genero</label>
+                        <input type="text" name="genero1" id="genero1" class="form-control" v-model="genero1">
                         </div>
                         <div class="form-group">
-                        <label for="stock">Stock</label>
-                        <input type="number" class="form-control" name="stock1" id="stock1" v-model="stock1">
+                        <label for="stock">Fecha de lanzamiento</label>
+                        <input type="text" class="form-control" name="fecha1" id="fecha1" v-model="fecha1">
                         </div>
                         <div class="form-group">
                         <label for="imagen">Imagen</label>
@@ -134,12 +135,12 @@ crossorigin="anonymous">
             
                         </div>
                         <div class="form-group">
-                        <label for="precio">Precio</label>
-                        <input type="number" name="precio" id="precio" class="form-control" v-model="precio">
+                        <label for="genero">Genero</label>
+                        <input type="text" name="genero" id="genero" class="form-control" v-model="genero">
                         </div>
                         <div class="form-group">
-                        <label for="stock">Stock</label>
-                        <input type="number" class="form-control" name="stock" id="stock" v-model="stock">
+                        <label for="fecha">Fecha de lanzamiento</label>
+                        <input type="date" class="form-control" name="fecha" id="fecha" v-model="fecha">
                         </div>
                         <div class="form-group">
                         <label for="imagen">Imagen</label>
