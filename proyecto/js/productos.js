@@ -5,15 +5,15 @@ return {
 productos:[],
 //url:'http://localhost:5000/productos',
 // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-url:'https://mauroac26.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
+url:'https://mauroac26.pythonanywhere.com/peliculas', // si ya lo subieron a pythonanywhere
 error:false,
 cargando:true,
 /*atributos para el guardar los valores del formulario */
 id:0,
 nombre:"",
 imagen:"",
-stock:0,
-precio:0,
+fecha:"",
+genero:"",
 }
 },
 
@@ -33,7 +33,7 @@ this.error=true
 
 
 eliminar(producto) {
-    alert(producto)
+
 const url = this.url+'/' + producto;
 var options = {
 method: 'DELETE',
@@ -49,8 +49,8 @@ location.reload();
 grabar(){
 let producto = {
 nombre:this.nombre,
-precio: this.precio,
-stock: this.stock,
+genero: this.genero,
+fecha: this.fecha,
 imagen:this.imagen
 }
 var options = {
