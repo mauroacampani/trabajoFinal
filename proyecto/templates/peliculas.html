@@ -97,9 +97,30 @@ crossorigin="anonymous">
             
                         </div>
                         <div class="form-group">
+                          
                         <label for="precio">Genero</label>
-                        <input type="text" name="genero1" id="genero1" class="form-control" v-model="genero1">
-                        </div>
+                        <select name="genero1" id="genero1" class="form-control" v-model="genero1">
+                          <option value="Acción">Acción</option>
+                          <option value="Aventura">Aventura</option>
+                          <option value="Comedia">Comedia</option>
+                          <option value="Drama">Drama</option>
+                          <option value="Fantasía">Fantasía</option>
+                          <option value="Ciencia ficción">Ciencia ficción</option>
+                          <option value="Terror">Terror</option>
+                          <option value="Romance">Romance</option>
+                          <option value="Animación">Animación</option>
+                          <option value="Animación">Documental</option>
+                          <option value="Thriller">Thriller</option>
+                          <option value="Western">Western</option>
+                          <option value="Musical">Musical</option>
+                          <option value="Crimen">Crimen</option>
+                          <option value="Suspenso">Suspenso</option>
+                          <option value="Historia">Historia</option>
+                          <option value="Guerra">Guerra</option>
+                        </select>
+                      </div>
+                        <!-- <input type="text" name="genero1" id="genero1" class="form-control" v-model="genero1">
+                        </div> -->
                         <div class="form-group">
                         <label for="sinopsis" >Sinopsis</label>
                         <textarea name="sinopsis1" id="sinopsis1" class="form-control" v-model="sinopsis1"></textarea>
@@ -121,7 +142,7 @@ crossorigin="anonymous">
             </div>
         </div>
         <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" onclick="modi();" class="btn btn-sm btn-primary">Guardar</button>
         </div>
       </div>
@@ -151,9 +172,30 @@ crossorigin="anonymous">
             
                         </div>
                         <div class="form-group">
-                        <label for="genero">Genero</label>
+                        <!-- <label for="genero">Genero</label>
                         <input type="text" name="genero" id="genero" class="form-control" v-model="genero">
-                        </div>
+                        </div> -->
+                        <label for="genero">Genero</label>
+                        <select name="genero" id="genero" class="form-control" v-model="genero">
+                          <option value="Acción">Acción</option>
+                          <option value="Aventura">Aventura</option>
+                          <option value="Comedia">Comedia</option>
+                          <option value="Drama">Drama</option>
+                          <option value="Fantasía">Fantasía</option>
+                          <option value="Ciencia ficción">Ciencia ficción</option>
+                          <option value="Terror">Terror</option>
+                          <option value="Romance">Romance</option>
+                          <option value="Animación">Animación</option>
+                          <option value="Animación">Documental</option>
+                          <option value="Thriller">Thriller</option>
+                          <option value="Western">Western</option>
+                          <option value="Musical">Musical</option>
+                          <option value="Crimen">Crimen</option>
+                          <option value="Suspenso">Suspenso</option>
+                          <option value="Historia">Historia</option>
+                          <option value="Guerra">Guerra</option>
+                        </select>
+                      </div>
                         <div class="form-group">
                             <label for="sinopsis">Sinopsis</label>
                             <textarea name="sinopsis" id="sinopsis" class="form-control" v-model="sinopsis" rows="3"></textarea>
@@ -175,8 +217,8 @@ crossorigin="anonymous">
             
             </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary" v-on:click="grabar()">Grabar</button>
         </div>
       </div>
@@ -202,14 +244,14 @@ crossorigin="anonymous">
                 </div>
             
             </div>
-        </div>
+        
         <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
-       
+          <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
         </div>
       </div>
     </div>
-  
+
 </section>
 </div>
 </div>
