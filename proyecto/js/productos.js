@@ -14,6 +14,7 @@ nombre:"",
 imagen:"",
 fecha:"",
 genero:"",
+sinopsis: ""
 }
 },
 
@@ -51,6 +52,7 @@ let producto = {
 nombre:this.nombre,
 genero: this.genero,
 fecha: this.fecha,
+sinopsis:this.sinopsis,
 imagen:this.imagen
 }
 var options = {
@@ -68,7 +70,7 @@ fetch(this.url, options)
     //   )
 
 
-window.location.href = "../templates/prueba.html";
+window.location.href = "../templates/peliculas.html";
 })
 
 .catch(err => {
