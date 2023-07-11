@@ -24,9 +24,10 @@ fetch(url)
 .then(data => {
     this.productos = data;
 
+
 // document.getElementById("id1").value=data.id
 document.getElementById("infoNombre").textContent  = data.nombre
-document.getElementById("infoGenero").textContent  = data.genero
+document.getElementById("infoGenero").textContent = data.genero
 document.getElementById("infoFecha").textContent  = data.fecha
 document.getElementById("infoSinopsis").textContent  = data.sinopsis
 // document.getElementById("imagen1").value =data.imagen
