@@ -8,8 +8,9 @@ return {
 id:0,
 nombre:"",
 imagen:"",
-stock:0,
-precio:0,
+stock:"",
+precio:"",
+sinopsis: "",
 url:'https://mauroac26.pythonanywhere.com/peliculas/'+id,
 
 }
@@ -28,6 +29,7 @@ document.getElementById("nombre1").value = data.nombre
 document.getElementById("imagen1").value =data.imagen
 document.getElementById("fecha1").value =data.fecha
 document.getElementById("genero1").value =data.genero
+document.getElementById("sinopsis1").value =data.sinopsis
 })
 .catch(err => {
 console.error(err);
@@ -53,6 +55,7 @@ function modi(){
     nombre:document.getElementById("nombre1").value,
     genero: document.getElementById("genero1").value,
     fecha: document.getElementById("fecha1").value,
+    sinopsis:document.getElementById("sinopsis1").value,
     imagen:document.getElementById("imagen1").value
     }
     
@@ -66,7 +69,7 @@ function modi(){
     .then(function () {
     alert("Registro modificado")
     
-    window.location.href = "../templates/prueba.html";
+    window.location.href = "../templates/peliculas.html";
     })
     .catch(err => {
     console.error(err);

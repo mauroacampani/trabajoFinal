@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(to right, rgb(39, 70, 133) 0%, rgb(61, 179, 197) 100%);
+}
+
+/* .card {
+    position: relative;
+    display: inline-block;
+  }
+   */
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* .button {
+    display: block;
+    margin-bottom: 10px;
+  } */
+
+  img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover img {
+    opacity: 0.5; /* Cambia el valor para ajustar la transparencia */
+  }
